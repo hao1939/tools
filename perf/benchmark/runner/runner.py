@@ -96,7 +96,7 @@ class Fortio:
         self.mode = mode
         self.ns = os.environ.get("NAMESPACE", "twopods")
         # bucket resolution in seconds
-        self.r = "0.00005"
+        self.r = "0.000005"
         self.mixer_mode = mixer_mode
         self.mixer_cache = mixer_cache
         self.perf_record = perf_record
