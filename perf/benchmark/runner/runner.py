@@ -167,7 +167,7 @@ class Fortio:
             grpc = "-grpc -ping"
 
         fortio_cmd = (
-            "fortio load -c {conn} -qps {qps} -t {duration}s -a -r {r} {grpc} -httpbufferkb=128 " +
+            "fortio load -c {conn} -qps {qps} -t {duration}s -p '50,75,80,90,95,99,99.9' -a -r {r} {grpc} -httpbufferkb=128 " +
             "-labels {labels}").format(
                 conn=conn,
                 qps=qps,
